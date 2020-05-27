@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Find | Kakao Clone</title>
   </head>
+
   <body>
+    <!-- Status bar at the top of the screen -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:13</span>
@@ -23,21 +25,29 @@
       </div>
     </div>
 
+    <!-- Header for screen title and icons -->
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Find</h1>
       </div>
+
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <a href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
         </span>
+
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
 
     <main class="find">
+      <!-- List of the methods for finding friends -->
       <header class="find__header">
         <ul class="find__header-list">
           <li class="find__header-btn header-btn">
@@ -78,19 +88,24 @@
         </ul>
       </header>
 
+      <!-- Recommended friends -->
       <ul class="find__recommended">
         <h5 class="find__title">Recommended Friends</h5>
+
         <li class="find__friend friend">
+          <!-- Same code from friends.html -->
           <div class="friend__column">
             <img
               src="images/recommended_friend.JPG"
               alt=""
               class="friend__avatar"
             />
+
             <div class="friend__content">
               <span class="friend__name">Tina</span>
             </div>
           </div>
+
           <div class="friend__column">
             <div class="friend__add-btn">
               <i class="fas fa-user-plus"></i>
@@ -100,6 +115,7 @@
       </ul>
     </main>
 
+    <!-- Navigation bar at the bottom of the screen -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
@@ -107,17 +123,20 @@
             <i class="far fa-user"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
             <div class="nav__badge">8</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>

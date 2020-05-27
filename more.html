@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <!-- Status bar at the top of the screen -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:13</span>
@@ -25,17 +26,23 @@
       </div>
     </div>
 
+    <!-- Header for screen title and icons -->
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">More</h1>
       </div>
+
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <a href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
         </span>
+
         <span class="header__icon">
           <i class="fas fa-qrcode"></i>
         </span>
+
         <span class="header__icon">
           <a href="settings.html">
             <i class="fas fa-cog"></i>
@@ -46,6 +53,7 @@
 
     <main class="more">
       <header class="more__header">
+        <!-- Same code from friends.html -->
         <div class="friends__friend friend">
           <div class="friend__column">
             <img
@@ -53,6 +61,7 @@
               alt=""
               class="g-avatar friend__avatar"
             />
+
             <div class="friend__content">
               <span class="friend__name">Veronica</span>
               <span class="friend__status">
@@ -60,16 +69,19 @@
               </span>
             </div>
           </div>
+
           <div class="friend__column">
-            <i class="far fa-comment-alt fa-2x"></i>
+            <i class="far fa-comment-alt"></i>
           </div>
         </div>
 
+        <!-- Button list under the my-info header -->
         <ul class="more__btn-list">
           <li class="more__btn">
             <span class="more__btn-icon">
               <i class="far fa-smile fa-2x"></i>
             </span>
+
             <span class="more__btn-title">Emoticons</span>
           </li>
 

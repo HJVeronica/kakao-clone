@@ -13,9 +13,18 @@
   font-weight: 300;
 }
 
+.settings__setting .settings__info {
+  opacity: 0.5;
+}
+
 .settings .settings__setting {
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.settings .settings__setting:nth-child(3) {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .settings .settings__setting:last-child {
