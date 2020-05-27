@@ -6,6 +6,7 @@
 @import "friends.css";
 @import "friend.css";
 @import "find.css";
+@import "more.css";
 
 * {
   /* Keep the original box size even after padding is added. */
