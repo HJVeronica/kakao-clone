@@ -11,8 +11,9 @@
 
     <title>Chats | Kakao Clone</title>
   </head>
+
   <body>
-    <!-- Status Bar at the Top of the Screen -->
+    <!-- Status bar at the top of the screen -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:13</span>
@@ -26,20 +27,33 @@
       </div>
     </div>
 
-    <!-- Header under the Status Bar -->
+    <!-- Header for screen title and icons -->
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Chats</h1>
       </div>
+
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <a href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
         </span>
+
         <span class="header__icon">
-          <i class="far fa-comment"></i>
+          <a href="friends.html">
+            <i class="far fa-comment"></i>
+          </a>
         </span>
+
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <i class="fas fa-music"></i>
+        </span>
+
+        <span class="header__icon">
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
@@ -48,14 +62,17 @@
     <main class="chats">
       <ul class="chats__list">
         <li class="chats__chat chat">
+          <!-- Link to the chat room -->
           <a href="chat.html">
             <div class="chats__chat friend">
+              <!-- Same code from friends.html -->
               <div class="friend__column">
                 <img
                   src="images/bestie.JPG"
                   alt=""
                   class="m-avatar friend__avatar"
                 />
+
                 <div class="friend__content">
                   <span class="friend__name">Island</span>
                   <span class="friend__bottom-text"
@@ -63,6 +80,7 @@
                   >
                 </div>
               </div>
+
               <div class="friend__column">
                 <span class="chat__timestamp">Yesterday</span>
               </div>
@@ -72,7 +90,7 @@
       </ul>
     </main>
 
-    <!-- Navigation Bar at the Bottom of the Screen -->
+    <!-- Navigation bar at the bottom of the screen -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
@@ -80,17 +98,20 @@
             <i class="far fa-user"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
             <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>

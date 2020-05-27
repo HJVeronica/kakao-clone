@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.header .header__back-btn i {
+  font-size: 28px;
+}
+
 .header .header__header-column {
   display: flex;
   align-items: center;
