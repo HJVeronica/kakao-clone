@@ -5,6 +5,7 @@
 @import "nav-bar.css";
 @import "friends.css";
 @import "friend.css";
+@import "find.css";
 
 * {
   /* Keep the original box size even after padding is added. */
