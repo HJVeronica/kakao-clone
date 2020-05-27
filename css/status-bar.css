@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .status-bar i {
@@ -11,4 +11,8 @@
 
 .status-bar .status-bar__battery-level {
   margin-left: 5px;
+}
+
+.status-bar .status-bar__clock {
+  margin-left: 10px;
 }
