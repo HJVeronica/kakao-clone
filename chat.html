@@ -12,6 +12,7 @@
   </head>
 
   <body class="chats-body">
+    <!-- Wrapper to fix the header -->
     <div class="header-wrapper">
       <!-- Status bar at the top of the screen -->
       <div class="status-bar">
@@ -60,16 +61,16 @@
             alt=""
             class="g-avatar message__avatar"
           />
+
           <div class="message__content">
             <span class="message__author">Island</span>
             <span class="message__bubble">
               Let's have a crochet meet-up!
             </span>
           </div>
-
-          <!-- <span class="message__timestamp"></span> -->
         </li>
 
+        <!-- Sent message -->
         <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
@@ -79,22 +80,23 @@
           </div>
         </li>
 
+        <!-- Incoming message -->
         <li class="incoming-message message">
           <img
             src="images/bestie.JPG"
             alt=""
             class="g-avatar message__avatar"
           />
+
           <div class="message__content">
             <span class="message__author">Island</span>
             <span class="message__bubble">
               What about next Monday around 2pm?
             </span>
           </div>
-
-          <!-- <span class="message__timestamp"></span> -->
         </li>
 
+        <!-- Sent message -->
         <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
@@ -106,22 +108,18 @@
       </ul>
     </main>
 
+    <!-- Input field in the chat room -->
     <div class="chat__write-container">
       <input
         type="text"
         placeholder="Send message"
         class="chat__write-input chat__write"
       />
+
       <div class="chat__icon-left chat__icon">
         <i class="far fa-plus-square"></i>
       </div>
-      <!-- <div class="chat__write-column">
-        <input
-          type="text"
-          placeholder="Send message"
-          class="chat__write-input"
-        />
-      </div> -->
+
       <div class="chat__icon-right chat__icon">
         <span class="chat__write-icon">
           <i class="far fa-smile-wink"></i>
