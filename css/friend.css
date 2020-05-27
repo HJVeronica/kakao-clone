@@ -9,6 +9,10 @@
   margin-bottom: 15px;
 }
 
+.friend__column .fa-comment-alt {
+  font-size: 28px;
+}
+
 .friend .friend__avatar {
   width: 50px;
   border-radius: 38%;
