@@ -14,27 +14,32 @@
 }
 
 .chats-body {
-  background-image: url("../images/chatBg.png");
+  background-image: url("../images/floor-tile.png");
   min-height: 100vh;
   padding: 10px 0;
   padding-top: 100px;
 }
 
-.chat__write {
+.chat__write-container {
   position: fixed;
-  bottom: 50px;
-  width: 80%;
+  bottom: 0;
   display: flex;
   align-items: center;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: #fcfcfc;
-  padding: 0 20px;
-  border-radius: 40px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  width: 100%;
   justify-content: space-between;
+}
+
+.chat__icon-left {
+  position: absolute;
+  left: 10px;
+}
+
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
 }
 
 .chat__write i {
@@ -45,15 +50,52 @@
   width: 80%;
 }
 
-.chat__write-column input {
-  padding: 20px 10px;
+@keyframes float {
+  0% {
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 13px 27px -50px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+}
+
+.chat__write {
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
   width: 100%;
   border: none;
   font-size: 14px;
+  transition: width 0.5s ease-in, border-radius 0.5s ease-in,
+    transform 0.5s ease-in-out;
+  margin: 0 auto;
 }
 
-.chat__write-column input:focus {
+.chat__write:focus {
   outline: none;
+  width: 80%;
+  transform: translateY(-100px);
+  border-radius: 40px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  animation: float 3s linear infinite forwards;
+}
+
+.chat__icon {
+  font-size: 18px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ~: Select Siblings */
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
 }
 
 .chat-screen .chat__messages {
@@ -68,7 +110,7 @@
 }
 
 .chat__messages .chat__timestamp {
-  background-color: rgb(242, 242, 242); /* Need to change */
+  background-color: white;
   font-size: 12px;
   font-weight: 600;
   padding: 5px 10px;
@@ -92,7 +134,6 @@
 
 .incoming-message {
   align-self: flex-start;
-  /* margin-bottom: 50px; */
 }
 
 .incoming-message img {
